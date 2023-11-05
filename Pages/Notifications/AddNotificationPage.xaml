@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Description: Main page to add notifications-->
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SEGP7.Pages.AddNotificationPage"
+             Title="Add Notification Page">
+    <VerticalStackLayout>
+
+        <StackLayout>
+            <Border Margin="5">
+                <HorizontalStackLayout HorizontalOptions="Start" Margin="10" >
+                    <Label Text="When: " VerticalOptions="Center" Margin="5" FontSize="22"/>
+                    <DatePicker x:Name="datePicker" />
+                </HorizontalStackLayout>
+            </Border>
+
+            <Border Margin="5">
+                <HorizontalStackLayout HorizontalOptions="Start" Margin="10" >
+                    <Label Text="At: " VerticalOptions="Center" Margin="5" FontSize="22"/>
+                    <TimePicker x:Name="timePicker" />
+                </HorizontalStackLayout>
+            </Border>
+
+            <Border Margin="5">
+                <HorizontalStackLayout HorizontalOptions="Start" Margin="10" >
+                    <Label Text="Every: " VerticalOptions="Center" Margin="5" FontSize="22"/>
+                    <Picker x:Name="interval" SelectedIndex="0" WidthRequest="110" Title="Select interval">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Hour</x:String>
+                                <x:String>Day</x:String>
+                                <x:String>Week</x:String>
+                                <x:String>Month</x:String>
+                                <x:String>Year</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                </HorizontalStackLayout>
+            </Border>
+
+            <Border Margin="5">
+                <HorizontalStackLayout HorizontalOptions="Start" Margin="10" >
+                    <Label Text="Text to display: " VerticalOptions="Center" Margin="5" FontSize="22"/>
+                    <Entry x:Name="title" Placeholder="Enter Text here" FontSize="15" WidthRequest="250"/>
+                </HorizontalStackLayout>
+            </Border>
+
+            <Button Text="Schedule" 
+                        Clicked="OnScheduleNotificationButtonPressed"
+                        WidthRequest="250"
+                        FontSize="22"
+                        Margin="5"/>
+            <Button Text="Cancel" 
+                        Clicked="OnCancelButtonPressed"
+                        WidthRequest="250"
+                        FontSize="22"/>
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>
