@@ -2,11 +2,15 @@
 
 A .net Maui C# application that utilizes Firebase for account credential hashing and salting, as well as data storage
 
+This application was developed for educational purposes, based on learning .net maui, C#, the Agile software engineering process, and 3-tier software architecture.
+
 Features a journal and a daily rating system to track changes in lifestyle, a personal checklist to keep track of todo items, and a white noise machine for relief during stressful periods of time.
 
 Account features allow you to backup and restore data when moving to a new device or reinstalling the application.
 
 Requires a firebase account and key, you can get one here: https://firebase.google.com/
+
+
 
 # Application preview
 
