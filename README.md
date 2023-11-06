@@ -10,7 +10,7 @@ Requires a firebase account and key, you can get one here: https://firebase.goog
 
 # Application preview
 
-<img src="https://github.com/SebastianAmyotte/Destress-and-notate/assets/71189225/69246701-df34-4c6c-bca9-a16064dfa0cc" width="300">
+<img src="https://github.com/SebastianAmyotte/Destress-and-notate/assets/71189225/3a003e9c-3ff9-4a0f-8642-302f2083ad3f" width="300">
 
 <img src="https://github.com/SebastianAmyotte/Destress-and-notate/assets/71189225/4ffed5d6-381e-45c7-9853-c0eaec2c7fe3" width="300">
 
